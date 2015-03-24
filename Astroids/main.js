@@ -68,7 +68,7 @@ var Player =
 };
 
 //set the image for the player to use
-Player.image.src = "ship2.png";
+Player.image.src = "ship.png";
 
 ////////////////////////////////////////////////////////////
 //Asteroids
@@ -85,19 +85,19 @@ function spawnAsteroid()
 		newAsteroid.image = document.createElement("img");
 	if (type == 0)
 	{
-		newAsteroid.image.src = "rock_large2.png";
+		newAsteroid.image.src = "rock_large.png";
 		newAsteroid.width = 69;
 		newAsteroid.height = 75;
 	}
 	if (type == 1)
 	{
-		newAsteroid.image.src = "rock_medium2.png";
+		newAsteroid.image.src = "rock_medium.png";
 		newAsteroid.width = 40;
 		newAsteroid.height = 50;
 	}
 	if (type == 2)
 	{
-		newAsteroid.image.src = "rock_small2.png";
+		newAsteroid.image.src = "rock_small.png";
 		newAsteroid.width = 22;
 		newAsteroid.height = 20;
 	}
