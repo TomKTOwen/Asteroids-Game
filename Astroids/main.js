@@ -278,13 +278,13 @@ function runGame(dt)
 	//score drawn into game
 		context.font = "18px Arial";
 		context.fillStyle = "#EAF51E"
-		var TextMeasure = context.measureText("Score: " + PlayerScore);
-		//context.fillText("Score: " + PlayerScore, SCREEN_WIDTH/10 - (TextMeasure.width/2), SCREEN_HEIGHT/10);
+		var TextMeasure = context.measureText("SCORE: " + PlayerScore);
+		context.fillText("SCORE: " + PlayerScore, SCREEN_WIDTH/10 - (TextMeasure.width/2), SCREEN_HEIGHT/10);
     
     //player Lives appears on screen
-		TextMeasure = context.measureText("Lives: " + Player.lives);
+		TextMeasure = context.measureText("LIVES: " + Player.lives);
 		context.fillStyle = "#EAF51E";
-		//context.fillText("Lives: " + Player.lives, SCREEN_WIDTH/10 - (TextMeasure.width/2), SCREEN_HEIGHT/10 + 20);
+		context.fillText("LIVES: " + Player.lives, SCREEN_WIDTH/10 - (TextMeasure.width/2), SCREEN_HEIGHT/10 + 20);
 	
 	////////////////////////////////////////////////////////////
 	//Player Movement
