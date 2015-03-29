@@ -431,6 +431,9 @@ function runEnd(dt)
 		
 		       
     }
+	context.fillStyle = "#FF0000"; 
+	var TextMeasure = context.measureText("FINAL SCORE: " + PlayerScore);
+	context.fillText("FINAL SCORE: " + PlayerScore, SCREEN_WIDTH/50 - (TextMeasure.width/50), SCREEN_HEIGHT/2);
 
 }
 
